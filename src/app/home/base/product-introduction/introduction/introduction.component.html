@@ -1,0 +1,100 @@
+<div class="center">
+  <div class="bookName">{{ productData.title }}</div>
+  <div class="remarks">
+    　　{{ productData.subtitle }}
+  </div>
+  <div class="bookCot">
+    <div class="bookImg"><img src="{{ productData.img }}"></div>
+    <div class="bookData">
+      <table border="0" class="bookInfo">
+        <tr>
+          <td style="width:70px;">作者</td>
+          <td style="width:10px;">：</td>
+          <td>{{ productData.author }}<input type="button" value="追蹤"></td>
+        </tr>
+        <tr>
+          <td>譯者</td>
+          <td>：</td>
+          <td>{{ productData.translator }}</td>
+        </tr>
+        <tr>
+          <td>繪師</td>
+          <td>：</td>
+          <td>{{ productData.illustrator }}</td>
+        </tr>
+        <tr>
+          <td>出版社</td>
+          <td>：</td>
+          <td>{{ productData.publishingHouse }} <input type="button" value="出版社追蹤"></td>
+        </tr>
+        <tr>
+          <td>出版日</td>
+          <td>：</td>
+          <td>{{ productData.publicationDay }}</td>
+        </tr>
+        <tr>
+          <td>ISBN</td>
+          <td>：</td>
+          <td>{{ productData.ISBN }}</td>
+        </tr>
+        <tr>
+          <td>適讀年齡</td>
+          <td>：</td>
+          <td>{{ productData.suitableAge }}</td>
+        </tr>
+      </table>
+      <table border="0" class="bookPrice">
+        <tr>
+          <td style="width:70px;">定價</td>
+          <td style="width:10px;">：</td>
+          <td><span style="text-decoration: line-through;">{{ productData.price }}</span>元</td>
+        </tr>
+        <tr>
+          <td>特價</td>
+          <td>：</td>
+          <td><span class="discount">{{ productData.bargain / productData.price * 100 }}</span> 折 <span class="discounted">{{ productData.bargain }}</span> 元</td>
+        </tr>
+        <tr>
+          <td>紅利可抵</td>
+          <td>：</td>
+          <td><b>{{ productData.bonus }}</b>元</td>
+        </tr>
+        <tr>
+          <td>運送方式</td>
+          <td>：</td>
+          <td [innerHTML]="productData.shippingMethod"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="IntField">
+    <div class="fieldName">內容簡介</div>
+    <div class="fieldCot" [innerHTML]="productData.Introduction"></div>
+  </div>
+  <div class="IntField">
+    <div class="fieldName">詳細資料</div>
+    <div class="fieldCot" [innerHTML]="productData.details"></div>
+  </div>
+  <div class="IntField">
+    <div class="fieldName">購物說明</div>
+    <div class="fieldCot">
+      <div class="subtitle">商品運送說明：</div>
+      <ul>
+        <li>當商品送達金石堂門市或便利商店後，您會收到E-mail通知，您也可透過【訂單查詢】確認到貨情況。</li>
+        <li>並請您於指定期限內付款取件，若逾期未取，您取貨的金石堂門市或便利商店將辦理退貨作業。</li>
+        <li>商品內容物以實物為主，網站圖片僅供參考。</li>
+      </ul>
+      <div class="subtitle">退換貨說明：</div>
+      <ul>
+        <li>依照消費者保護法的規定，享有商品取貨日起七天鑑賞期的權益。</li>
+        <li>商品若有不滿意／瑕疵／錯誤，請您於鑑賞期七日內辦理退貨。</li>
+        <li>辦理退換貨時，商品必須是全新狀態與完整包裝。<br />
+          <span class="subRemarks">　　※請注意保持商品本體、配件、贈品、保證書、原廠包裝及所有附隨文件或資料的完整性，切勿缺漏任何配件或損毀原廠外盒。</span>
+        </li>
+        <li>退回商品無法回復原狀者，恐將影響退貨權益或需負擔部分費用。</li>
+      </ul>
+    </div>
+  </div>
+
+</div>

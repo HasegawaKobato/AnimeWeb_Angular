@@ -1,0 +1,24 @@
+<div class="centerColumn">
+  <div class="title">
+    <div class="subject">
+      <p>新品上市</p>
+    </div>
+    <div class="more moreHover">
+      <a (click)="changeToDetailType(detailType.New)"><span>more...</span></a>
+    </div>
+  </div>
+  <div class="cot">
+      <ng-container *ngFor="let item of productData; index as i">
+        <a routerLink="productIntroduction" [queryParams]="{order: item.order }">
+          <div *ngIf="i < 2" class="centerItem">
+            <img src="{{ item.img }}"><br />
+            <span class="intro">{{ item.title }}</span>
+          </div>
+          <div *ngIf="i >= 2" class="centerItemE">
+            <img src="{{ item.img }}"><br />
+            <span class="intro">{{ item.title }}</span>
+          </div>
+        </a>
+      </ng-container>
+  </div>
+</div>
