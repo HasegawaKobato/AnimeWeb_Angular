@@ -6,7 +6,7 @@ import { newProduct } from './new-product.const';
 @Component({
   selector: 'app-new',
   templateUrl: './new.component.html',
-  styleUrls: ['./new.component.sass']
+  styleUrls: []
 })
 export class NewComponent implements OnInit {
 

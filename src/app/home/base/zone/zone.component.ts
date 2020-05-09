@@ -5,7 +5,7 @@ import { ChangeTypeService } from '../../change-type.service';
 @Component({
   selector: 'app-zone',
   templateUrl: './zone.component.html'
-  // styleUrls: ['./zone.component.sass', './grids-responsive-min.sass', './pure-min.sass']
+  // styleUrls: []
 })
 export class ZoneComponent implements OnInit {
 

@@ -5,7 +5,7 @@ import { productIntroduction } from '../../../../product-introduction.const'
 @Component({
   selector: 'app-introduction',
   templateUrl: './introduction.component.html'
-  // styleUrls: ['./introduction.component.sass', './grids-responsive-min.sass', './pure-min.sass']
+  // styleUrls: []
 })
 export class IntroductionComponent implements OnInit {
 

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html'
-  // styleUrls: ['./home.component.sass', './grids-responsive-min.sass', './pure-min.sass']
+  // styleUrls: []
 })
 export class HomeComponent implements OnInit {
 

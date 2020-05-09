@@ -5,7 +5,7 @@ import { ChangeTypeService } from '../../../change-type.service';
 @Component({
   selector: 'app-new-detail',
   templateUrl: './new-detail.component.html',
-  styleUrls: ['./new-detail.component.sass']
+  styleUrls: []
 })
 export class NewDetailComponent implements OnInit {
 

@@ -5,7 +5,7 @@ import { ChangeTypeService } from '../../change-type.service';
 @Component({
   selector: 'app-coming-tv-trad-book',
   templateUrl: './coming-tv-trad-book.component.html',
-  styleUrls: ['./coming-tv-trad-book.component.sass']
+  styleUrls: []
 })
 export class ComingTvTradBookComponent implements OnInit {
 

@@ -5,7 +5,7 @@ import { ChangeTypeService } from '../../change-type.service';
 @Component({
   selector: 'app-coming-tv-ori-book',
   templateUrl: './coming-tv-ori-book.component.html',
-  styleUrls: ['./coming-tv-ori-book.component.sass']
+  styleUrls: []
 })
 export class ComingTvOriBookComponent implements OnInit {
 
